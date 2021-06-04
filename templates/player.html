@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block content_to_render %}
+<div class="text-center mb-1">
+    <h1>{{player.full_name}}</h1>
+</div>
+
+<hr class="featurette-divider bg-warning">
+<div class="row player">
+    <div class="col-md-12 col-lg-4">
+        <img src="{{ player.image_source }}" alt="{{ player.url }}" class="featurette-image image-responsive mb-0">
+        <div class="player-jersey-no my-0">{{player.jersey_number}}</div>
+        <div class="player-field-position text-center mt-0">{{player.position}}</div>
+    </div>
+    <div class="col-md-12 col-lg-8">
+        <p class="player-desc">{{ player.description }}</p>
+        <div class="text-center border-bottom player-statistics">
+            <h4 class="text-uppercase">Statistics</h4>
+            <div class="border border-info pl-3">
+                <!-- Info -->
+                <div class="row text-center">
+                    <div class="col-sm-6 col-md-6 mt-3">
+                        <h5>Appearances</h5>
+                        <h6>{{player.appearances}}</h6>
+                    </div>
+                    <div class="col-sm-6 col-md-6 mt-3">
+                        <h5>Nationality</h5>
+                        <h6>{{player.nationality}}</h6>
+                    </div>
+                </div>
+                <!-- Performance Stats  -->
+                <div class="row text-center">
+                    {% if player.position == 'Goalkeeper' %}
+                    <div class="col-md-6 col-lg-6 mt-3">
+                        <h5>Clean Sheets</h5>
+                        <h6 class="text-danger">{{player.clean_sheets}}</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-6 mt-3">
+                        <h5>Saves</h5>
+                        <h6 class="text-success">{{player.saves}}</h6>
+                    </div>
+                    {% else %}
+                    <div class="col-md-6 col-lg-6 mt-3">
+                        <h5>Goals</h5>
+                        <h6 class="text-danger">{{player.goals}}</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-6 mt-3">
+                        <h5>Assists</h5>
+                        <h6 class="text-success">{{player.assists}}</h6>
+                    </div>
+                    {% endif %}
+                    <div class="col-md-6 col-lg-6 mt-3">
+                        <h5>Wins</h5>
+                        <h6 class="text-primary">{{player.wins}}</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-6 mt-3">
+                        <h5>Losses</h5>
+                        <h6 class="text-info">{{player.losses}}</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="text-center mt-3 pl-3">
+        <a class="text-warning" href="/team">&larr; Back</a>
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

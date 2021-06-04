@@ -49,17 +49,9 @@
 
 [Live Project URL](https://josygeorge.github.io/interactive-fe-dev-project/)
 
-- User can browse through the application to know about their current weather and forecast conditions based on their current geolocation.
-
-- Also user can search for any city in the world to know the weather and forecast details of the same.
-- An external weather API is used to fetch the data for the dynamic behaviour of the application.
-- Concepts and elements of HTML5, CSS3, Bootstrap 4.6, fontawesome 4.7 are used.
-- Javascript is being used to dynamically code the interfaces through jquery functions.
-- jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License.
+- User can browse through the application to know about the soccer club players details.
 
 ### Built With
-
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 - [Clean Blog template](https://startbootstrap.com/theme/clean-blog)
 - [Flask & Jinja Templating](https://flask.palletsprojects.com/en/2.0.x/templating/)

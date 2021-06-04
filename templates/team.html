@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content_to_render %}
+<h1>{{page_title}}</h1>
+<hr class="featurette-divider bg-warning">
+<div class="row featurette team">
+    {% for player in team %}
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <br>
+        <div class="card shadow-lg bg-dark pt-3">
+            <a class="player-img-link" href="/team/{{ player.url }}">
+                <img class="card-img-top img-fluid" src="{{ player.image_source }}" alt="{{player.url}}">
+            </a>
+            <div class="card-body text-center text-light">
+                <a href="/team/{{ player.url }}">
+                    <span class="jersey-number mb-1">
+                        <h6 class="text-info">{{player.jersey_number}}</h6>
+                    </span>
+                    <h6 class="card-title text-warning">{{player.jersey_name}}</h6>
+                </a>
+                <h6 class="position">{{player.position}}</h6>
+            </div>
+        </div>
+    </div>
+
+    {% if loop.index == loop.length %}
+    <hr1 class="featurette-divider12">
+        {% endif %}
+
+        {% endfor %}
+</div>
+{% endblock %}
