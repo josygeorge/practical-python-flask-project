@@ -42,7 +42,7 @@ def player_details(playername):
 def contact():
     email_regex = re.compile(r"[^@]+@[^@]+\.[^@]+")
     if request.method == "POST":
-        if request.form.get("name") == '' or request.form.get("email") == '' or request.form.get("message") == '' or email_regex.match(request.form.get("email")) == None:
+        if request.form.get("name") == '' or request.form.get("email") == '' or request.form.get("message") == '' or email_regex.match(request.form.get("email")) is None:
             flash("Hey, please check the entry! / email format")
         else:
             flash("Hey {}, we just received your message!".format(

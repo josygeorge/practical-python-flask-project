@@ -1,9 +1,9 @@
-# Practical Python Project using Flask Micro Framework, June 04 -2021.
+# Practical Python Project using Flask Micro Framework, June 04, 2021.
 
 <!-- ASSIGNMENT INTRO -->
 <br />
 <p>
-  <h3 align="center">Mini Python Project - 2021 FSSD Jan - Aug Batch, Canadian Business College</h3>
+  <h3 align="center">Mini Python Project - 2021 FSSD Jan - Aug Batch, Canadian Business College, Toronto, CA</h3>
   <br />
   <h5 align="center">This project is a part of the Full-Stack Software Development Diploma with Canadian Business College, Toronto and Code Institute(https://codeinstitute.net/full-stack-software-development-diploma/)</h5>
   <br />
@@ -12,7 +12,7 @@
     <br />
     <br />
     <h3 align="center">
-        <a href="https://josygeorge.github.io/interactive-fe-dev-project/">View Demo</a>
+        <a href="https://practical-python-flask-project.herokuapp.com/">View Project</a>
     </h3>
   </p>
 </p>
@@ -47,7 +47,7 @@
 
 ## About The Project
 
-[Live Project URL](https://josygeorge.github.io/interactive-fe-dev-project/)
+[Live Project](https://practical-python-flask-project.herokuapp.com/)
 
 - User can browse through the application to know about the soccer club players details.
 
@@ -142,10 +142,25 @@ The project has the following file structure.
 
 ### Heroku Deployment
 
-1. Create a Heroku App
+1. Create / Sign Up a Heroku Account at [https://www.heroku.com/](https://www.heroku.com/)
+  - Sign In to Heroku account
+  - create New App
 2. Connect Git remote to Heroku
-3. Create / Use a 'requirements.txt' file
+3. Create and/or Use a 'requirements.txt' file
 4. Create a Heroku 'Procfile'
+5. Create your config vars (key:value)
+  - Go to Settings -> Config Vars -> Add each one
+      - IP : YOUR_IP
+      - PORT: 5000
+      - SECRET_KEY: xxxxxxx
+6. Deploy
+  - Go to Deploy Tab Section
+    - Deployment method -> App connected to GitHub
+      - Select (search and find) github repository
+    - Deploy Branch
+    - You could set Automatic Deploys, for next each pushes to the GitHub
+7. Check the Activity Tab for Successful deployments OR other wise, in case of FAIL for errors
+8. Finally, Open App for running the app
 
 ## Coding and Testing
 
@@ -173,5 +188,5 @@ Josy George - [@github](https://github.com/josygeorge/)
 - [Mozilla.Org](https://developer.mozilla.org/en-US/docs/Web/Guide/)
 - [W3 Schools](https://www.w3schools.com)
 - [Instructor's (Anmar Jarjees) Notes](https://github.com/anmarjarjees?tab=repositories)
-- [Technical Content Provider](https://codeinstitute.net/full-stack-software-development-diploma/)
+- [Technical Content (LMS) Provider](https://codeinstitute.net/full-stack-software-development-diploma/)
 - [Management - Canadian Business College](https://canadianbusinesscollege.com/)
