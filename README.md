@@ -146,11 +146,15 @@ The project has the following file structure.
     - Sign In to Heroku account
     - create New App
 2. Connect Git remote to Heroku
-    - Get heroku url from Settings Tab Section
+    - Get heroku url from Settings Tab Section, IF USING via CLI
       ```sh
       git remote add heroku https://git.heroku.com/practical-python-flask-project.git
       ```
-     - Here, chosen 'heroku' as the remote name. It can be any name of your choice, but devoid of other remote names the repo has!
+        - Here, chosen 'heroku' as the remote name. It can be any name of your choice, but devoid of other remote names the repo has!
+    OR
+    - use GUI directly
+        - push the full app to your github, after finishing the following steps 3, 4, 5
+        - then deploy to heroku. Go to -> Section 6.2
 3. Create and/or Use a 'requirements.txt' file
     - use pip freeze / pip3 freeze to redirect the output, the installed packages, to the file as it's content by creating the file
       ```sh
@@ -167,13 +171,13 @@ The project has the following file structure.
         - PORT: 5000
         - SECRET_KEY: xxxxxxx
 6. Deploy
-    - Either use cli method 
+    1. Either use cli method 
         ```sh
         git push -u heroku main
         ```
     OR
 
-    - Go to Deploy Tab Section
+    2. Go to Deploy Tab Section
         - Deployment method -> App connected to GitHub
             - Select (search and find) github repository
         - Deploy Branch
