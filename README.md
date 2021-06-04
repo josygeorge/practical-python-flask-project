@@ -157,6 +157,10 @@ The project has the following file structure.
       pip3 freeze > requirements.txt
       ```
 4. Create a Heroku 'Procfile'
+    - Put the following line in the file
+    ```sh
+    web: python run.py
+    ```
 5. Create your config vars (key:value)
     - Go to Settings -> Config Vars -> Add each one
         - IP : YOUR_IP
