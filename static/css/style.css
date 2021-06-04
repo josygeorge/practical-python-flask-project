@@ -54,10 +54,10 @@ header.masthead {
   border: 1px solid #ffc107;
   display: inline-block;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 33px;
+  height: 33px;
   padding-left: 3px;
-  padding-top: 4px;
+  padding-top: 6px;
 }
 .team span.jersey-number:hover {
   opacity: 0.8;
