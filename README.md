@@ -143,30 +143,45 @@ The project has the following file structure.
 ### Heroku Deployment
 
 1. Create / Sign Up a Heroku Account at [https://www.heroku.com/](https://www.heroku.com/)
-  - Sign In to Heroku account
-  - create New App
+    - Sign In to Heroku account
+    - create New App
 2. Connect Git remote to Heroku
+    - Get heroku url from Settings Tab Section
+      ```sh
+      git remote add heroku https://git.heroku.com/practical-python-flask-project.git
+      ```
+     - Here, chosen 'heroku' as the remote name. It can be any name of your choice, but devoid of other remote names the repo has!
 3. Create and/or Use a 'requirements.txt' file
+    - use pip freeze / pip3 freeze to redirect the output, the installed packages, to the file as it's content by creating the file
+      ```sh
+      pip3 freeze > requirements.txt
+      ```
 4. Create a Heroku 'Procfile'
 5. Create your config vars (key:value)
-  - Go to Settings -> Config Vars -> Add each one
-      - IP : YOUR_IP
-      - PORT: 5000
-      - SECRET_KEY: xxxxxxx
+    - Go to Settings -> Config Vars -> Add each one
+        - IP : YOUR_IP
+        - PORT: 5000
+        - SECRET_KEY: xxxxxxx
 6. Deploy
-  - Go to Deploy Tab Section
-    - Deployment method -> App connected to GitHub
-      - Select (search and find) github repository
-    - Deploy Branch
-    - You could set Automatic Deploys, for next each pushes to the GitHub
+    - Either use cli method 
+        ```sh
+        git push -u heroku main
+        ```
+    OR
+
+    - Go to Deploy Tab Section
+        - Deployment method -> App connected to GitHub
+            - Select (search and find) github repository
+        - Deploy Branch
+        - You could set Automatic Deploys, for next each pushes to the GitHub
 7. Check the Activity Tab for Successful deployments OR other wise, in case of FAIL for errors
 8. Finally, Open App for running the app
 
 ## Coding and Testing
 
 - On coding, each functionality as a unit is being logically designed, implemented, followed with it's
-  - Unit testing and
-  - Use case testing
+    - Unit testing and
+    - Use case testing
 
 <!-- LICENSE -->
 
